@@ -10,14 +10,12 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href= "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Space+Grotesk:wght@300&display=swap';
-    rel="stylesheet">
+  <link href= "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Space+Grotesk:wght@300&display=swap'; rel="stylesheet">
 </head>
 
-<body id="top" class="dark_theme">
-<!--   <div class="cursor-dot" data-cursor-dot></div>
-  <div class="cursor-outline" data-cursor-outline></div> -->
+<body id="top" class="shubhamvadke_theme">
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
 
 <!-- <==================================HEADER==================================> -->
   <header class="header" data-header>
@@ -37,23 +35,23 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#home" class="navbar-link">Home/></a>
+            <a href="#home" class="navbar-link" data-nav-link>Home/></a>
           </li>
 
           <li>
-            <a href="#about" class="navbar-link">About/></a>
+            <a href="#about" class="navbar-link" data-nav-link>About/></a>
           </li>
 
           <li>
-            <a href="#skills" class="navbar-link">Skills/></a>
+            <a href="#skills" class="navbar-link" data-nav-link>Skills/></a>
           </li>
 
           <li>
-            <a href="#portfolio" class="navbar-link">Projects/></a>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Projects/></a>
           </li>
 
           <li>
-            <a href="#contact" class="navbar-link">Contact/></a>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact/></a>
           </li>
 
         </ul>
@@ -86,7 +84,7 @@
 
         </div>
 
-        <!-- <a href="#stats" class="scroll-down">Go down</a> -->
+        <!-- <a href="#stats" class="scroll-down">Go down</a>  -->
 
       </section>
 
@@ -124,20 +122,66 @@
           <h2 class="h3 section-title">My Programming Skills</h2>
 
           <div class="Skills-list">
-            <div class="logos"><img src="./assets/images/Java.jpg"></div>
-            <div class="logos"><img src="./assets/images/HTML.jpg"></div>
-            <div class="logos"><img src="./assets/images/CSS.jpg"></div>
-            <div class="logos"><img src="./assets/images/Bootstrap.jpg"></div>
-            <div class="logos"><img src="./assets/images/JavaScript.jpg"></div>
-            <div class="logos"><img src="./assets/images/JQuery.jpg"></div>
-            <div class="logos"><img src="./assets/images/React.jpg"></div>
-            <div class="logos"><img src="./assets/images/Redux.jpg"></div>
-            <div class="logos"><img src="./assets/images/MySQL.jpg"></div>
-            <div class="logos"><img src="./assets/images/Mongodb.jpg"></div>
-            <div class="logos"> <img src="./assets/images/docker.jpg"></div>
-            <div class="logos"><img src="./assets/images/aws.png"></div>  
-        </div> 
+            <div class="skill-card">
+              <div class="tooltip">Java</div>
+              <div class="card-icon"><img src="./assets/images/Java.png"></div>
+            </div>
 
+            <div class="skill-card">
+              <div class="tooltip">HTML5</div>
+              <div class="card-icon"><img src="./assets/images/HTML.png"></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="tooltip">CSS3</div>
+              <div class="card-icon"><img src="./assets/images/CSS.png"></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="tooltip">JavaScript</div>
+              <div class="card-icon"><img src="./assets/images/JavaScript.jpg"></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="tooltip">Bootstrap</div>
+              <div class="card-icon"><img src="./assets/images/Bootstrap.png"></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="tooltip">jQuery</div>
+              <div class="card-icon"><img src="./assets/images/JQuery.png"></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="tooltip">React</div>
+              <div class="card-icon"><img src="./assets/images/React.png"></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="tooltip">Redux</div>
+              <div class="card-icon"><img src="./assets/images/Redux.png"></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="tooltip">MySQL</div>
+              <div class="card-icon"><img src="./assets/images/MySQL.png"></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="tooltip">MongoDB</div>
+              <div class="card-icon"><img src="./assets/images/Mongo.png"></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="tooltip">Docker</div>
+              <div class="card-icon"> <img src="./assets/images/Docker.png"></div>
+            </div>
+            
+            <div class="skill-card">
+              <div class="tooltip">Git</div>
+              <div class="card-icon"><img src="./assets/images/Git.png"></div>  
+            </div>
+          </div> 
         </div>
       </section>
 
@@ -173,7 +217,7 @@
 
               <div class="card-content">
                 <h3 class="h4 card-title">QR Code Genrator</h3>
-                
+                <!-- <button class="btn btn-secondary">Click here</button> -->
                 <!-- <time class="publish-date" datetime="2022-04">April 2022</time> -->
               </div>
 
@@ -420,9 +464,6 @@
           <button type="submit" class="btn btn-primary">Send</button>
           <span id="msg"></span>
         </form>
-        
-      
-
       </section>
     </article>
   </main>
@@ -431,12 +472,6 @@
 <!-- <==================================FOOTER==================================> -->
   <footer class="footer">
     <div class="container">
-
-      <!-- <p class="h1 logo">
-        <a href="#">
-          Jack<span>.</span>
-        </a>
-      </p> -->
 
       <p class="copyright">
         &copy; 2024 Developed By <a href="https://shubhamvadke.pages.dev/">shubhamvadke</a> 
@@ -450,15 +485,11 @@
     <ion-icon name="arrow-up"></ion-icon>
   </a>
 
-
   <script src="./assets/js/script.js"></script>
 
-  <!-- 
-    - ionicon link
-  -->
+  <!---------------ionicon link------------->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-
 </html>
