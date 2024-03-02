@@ -76,9 +76,6 @@ textarea {
   border: none;
   font: inherit;
 }
-
-button,
-select { cursor: none; }
 /* make chage up */
 
 
@@ -109,7 +106,6 @@ body {
   background: #000000;
   transition: var(--transition-1);
   scroll-behavior: smooth;
-  cursor: none;
 }
 
 body.active { 
@@ -154,7 +150,6 @@ body.active {
 
 .logo :hover{
   color: #C30378;
-  cursor: none;
 }
 
 .h2,
