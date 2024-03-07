@@ -432,6 +432,10 @@ main {
   margin-bottom: 30px;
 }
 
+:is(.hero-social-list, .scroll-down) {
+  display: none;
+}
+
 /* .hero-content {
   max-width: 450px;
 } */
