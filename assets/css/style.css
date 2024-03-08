@@ -5,6 +5,7 @@
   --scarlet: hsl(13, 96%, 47%);
   --black: hsl(0, 32%, 18%);
   --white: hsl(0, 0%, 100%);
+  --theme-color: hsl(10, 100%, 57%);
 
   /* <========================typography========================> */
   --ff-saira-stencil-one: "Space Grotesk", sans-serif;
@@ -171,6 +172,29 @@ body.active {
   /* font-size: var(--fs-2); */
   font-size: 50px;
   padding: auto;
+}
+
+.slide-down-btn {
+  color: #c30378;
+  font-size: 50px;
+  max-width: max-content;
+  transition: var(--transition);
+  animation: scrollDown 2s ease infinite;
+  text-align: center;
+  margin: auto;
+}
+
+.slide-down-btn:is(:hover, :focus) {
+  color: white;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(20px);
+  }
 }
 
 .h3 {
@@ -435,7 +459,6 @@ main {
 :is(.hero-social-list, .scroll-down) {
   display: none;
 }
-
 /* .hero-content {
   max-width: 450px;
 } */
@@ -530,6 +553,7 @@ main {
 }
 
 .project-card {
+  margin-top: 50px;
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-12);
@@ -544,10 +568,10 @@ main {
   transition: var(--transition-1);
 }
 
-.project-card:is(:hover, :focus)::after {
+/* .project-card:is(:hover, :focus)::after {
   background: hsla(0, 0%, 100%, 0.1);
   backdrop-filter: blur(0.5px);
-}
+} */
 
 .project-card .card-content {
   position: absolute;
@@ -584,13 +608,6 @@ main {
 
 .project-card:is(:hover, :focus) .publish-date {
   transition-delay: 0.1s;
-}
-
-.load-more {
-  font-size: var(--fs-4);
-  color: var(--raw-seinna);
-  text-decoration: underline;
-  margin-inline: auto;
 }
 
 /* <========================CONTACT========================> */
@@ -944,6 +961,10 @@ textarea.input-field {
   .section-content {
     position: relative;
     padding-left: 40px;
+  }
+
+  .submit {
+    text-align: center;
   }
 
   .section-subtitle {
