@@ -1,14 +1,16 @@
 :root {
   /* <========================COLORS========================> */
-  --raw-seinna: #c30378;
-  --sizzling-sunrise: hsl(51, 95%, 54%);
-  --scarlet: hsl(13, 96%, 47%);
+  /* --raw-seinna: #c30378; */
+  --raw-seinna: #ff019e;
+  /* --sizzling-sunrise: hsl(51, 95%, 54%); */
+  /* --scarlet: hsl(13, 96%, 47%); */
   --black: hsl(0, 32%, 18%);
   --white: hsl(0, 0%, 100%);
-  --theme-color: hsl(10, 100%, 57%);
+  /* --theme-color: hsl(10, 100%, 57%); */
 
   /* <========================typography========================> */
-  --ff-saira-stencil-one: "Space Grotesk", sans-serif;
+  /* --ff-saira-stencil-one: "Space Grotesk", sans-serif; */
+  --ff-saira-stencil-one: "Figtree", sans-serif;
   --fs-1: 35px;
   --fs-2: calc(1.813rem + 1vw);
   --fs-3: calc(1.313rem + 1vw);
@@ -153,11 +155,11 @@ body.active {
 }
 
 .logo span {
-  font-weight: 999;
+  font-weight: 600;
 }
 
 .logo :hover {
-  color: #c30378;
+  color: var(--raw-seinna);
 }
 
 .h2,
@@ -168,6 +170,11 @@ body.active {
   line-height: 1.2;
 }
 
+.h5 {
+  color: #c30378;
+  font-size: var(--fs-5);
+}
+
 .h2 {
   /* font-size: var(--fs-2); */
   font-size: 50px;
@@ -175,7 +182,7 @@ body.active {
 }
 
 .slide-down-btn {
-  color: #c30378;
+  color: var(--raw-seinna);
   font-size: 50px;
   max-width: max-content;
   transition: var(--transition);
@@ -243,7 +250,7 @@ body.active {
 .section-subtitle {
   font-family: var(--ff-saira-stencil-one);
   position: relative;
-  color: #c30378;
+  color: var(--raw-seinna);
   text-transform: uppercase;
   padding-bottom: 5px;
   margin-bottom: 20px;
@@ -397,8 +404,7 @@ body.active {
   overflow: hidden;
 }
 .navbar-link:hover {
-  color: #c30378;
-  font-weight: 999;
+  color: var(--raw-seinna);
 }
 
 .navbar-link {
@@ -754,7 +760,7 @@ textarea.input-field {
 
 .contact .btn-primary:hover {
   color: #ffffff;
-  background-color: #c30378;
+  background-color: var(--raw-seinna);
 }
 
 /* <========================FOOTER========================> */
@@ -792,7 +798,7 @@ textarea.input-field {
   font-size: 20px;
   color: var(--color-primary);
   /* border: 2px solid var(--color-primary); */
-  border: 2px solid #c30378;
+  border: 2px solid var(--raw-seinna);
   border-radius: 50%;
   opacity: 0;
   pointer-events: none;
