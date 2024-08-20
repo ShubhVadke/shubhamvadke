@@ -196,7 +196,7 @@ body.active {
 
 .slide-down-btn {
   color: var(--raw-seinna);
-  font-size: 50px;
+  font-size: 80px;
   max-width: max-content;
   transition: var(--transition);
   animation: scrollDown 2s ease infinite;
@@ -442,7 +442,7 @@ body.active {
 }
 
 .navbar-link span xmp {
-  font-size: 14px;
+  font-size: 15px;
   font-family: var(--ff-saira-stencil-one);
 }
 
@@ -1000,7 +1000,7 @@ textarea.input-field {
     padding-inline: 10px;
   }
   .navbar-link {
-    font-size: 20px;
+    /* font-size: 24px; */
     padding: 15px;
     transform: translateY(50px);
     transition: 0.75s cubic-bezier(0.68, -0.55, 0.27, 2);
@@ -1012,13 +1012,13 @@ textarea.input-field {
     font-size: 34px;
   }
   .h2 {
-    font-size: 42px;
+    font-size: 50px;
   }
   .h5 {
     font-size: 16px;
   }
   .slide-down-btn {
-    font-size: 48px;
+    font-size: 60px;
   }
   .Skills-list {
     display: grid;
